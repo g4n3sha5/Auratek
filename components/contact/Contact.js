@@ -1,30 +1,57 @@
-export const projectsList = [
+export const personList = [
     {
-        key: "avenida",
-        name: "CH Avenida - przebudowa",
-        desc: "Przebudowa instalacji w CH AVENIDA w Poznaniu",
-        photoURL: "/img/chavenida.webp"
+        key: "MarcinW",
+        name: "Marcin Wojciechowski",
+        tel: "500-180-044",
+        email: "marcin.wojciechowski@auratek.pl"
     },
 
+    {
+        key: "JakubB",
+        name: "Jakub Błaszczak",
+        tel: "660-739-814",
+        email: "jakub.blaszczak@auratek.pl"
+    },
+
+    {
+        key: "MichalD",
+        name: "Michał Dalkowski",
+        tel: "501-626-265",
+        email: "michal.dalkowski@auratek.pl"
+    },
+
+
+    {
+        key: "JacekP",
+        name: "Jacek Pietraszewski",
+        tel: "506-708-474",
+        email: "jacek.pietraszewski@auratek.pl"
+    },
+
+    {
+        key: "ZuzannaG",
+        name: "Zuzanna Grzybulska",
+        tel: "606-505-857",
+        email: "biuro@auratek.pl"
+    },
 
 
 ]
 
-export const Project = ({key, name, desc, photoURL}) => {
+export const Person = ({key, name, tel, email}) => {
     return (
-        <div key={key} className="col-lg-4 col-md-6 portfolio-item ">
-            <div className="portfolio-wrap h-100">
-                <img src={photoURL} className="img-fluid h-100" alt=""/>
-                <div className="portfolio-info ">
-                    <h4>{name}</h4>
-                    <p>{desc}</p>
-                    <div className="portfolio-links">
-                        <a href="../../portfolio-details.html" title="More Details"><i
-                            className="bx bx-link"></i></a>
-                    </div>
-                </div>
+
+
+        <div className="icon-box  col-lg-6 py-3 px-2" data-aos="zoom-in" data-aos-delay="150">
+            <div className="contactBox">
+                <i className='bx bx-id-card'></i>
+                <h4>{name}</h4>
+                <h6>{tel}</h6>
+                <h5>{email}</h5>
             </div>
         </div>
+
+
     )
 }
 
@@ -41,49 +68,25 @@ const Contact = () => {
 
                 </div>
 
-
                 <div className="container p-3 px-5 ">
 
-
-                    <h2 className="px-5 w-100 text-center"></h2>
                     <div className="row p-3">
+                        <div className="col-lg-5  px-2">
+                            <h2>AURATEK Marcin Wojciechowski</h2>
+                            <p>ul. Konstytucji 3 Maja 1/60
 
-                        <h2>AURATEK Marcin Wojciechowski</h2>
-                        <p>ul. Konstytucji 3 Maja 1/60
-
-                            63-100 Śrem</p>
-                        <h3>tel. kom. +48 500 180 044</h3>
-                        <h3>E-mail:biuro@auratek.pl</h3>
-
-
-
-                        <div className="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-
-                            <div className="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                                {
-                                    projectsList.map(Project)
-                                }
+                                63-100 Śrem</p>
+                            <h3>tel. kom. +48 500 180 044</h3>
+                            <h3>E-mail:biuro@auratek.pl</h3>
+                        </div>
 
 
-                                <i className="bx bx-receipt"></i>
-                                <h4>Wieloletnie doświadczenie</h4>
-                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                            </div>
-                            <div className="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-                                <i className="bx bx-cube-alt"></i>
-                                <h4>Profesjonalne podejście</h4>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                            </div>
-                            <div className="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-                                <i className="bx bx-images"></i>
-                                <h4>Wielokrotne wyróżnienia</h4>
-                                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                            </div>
-                            <div className="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-                                <i className="bx bx-shield"></i>
-                                <h4>Kompleksowa obsługa</h4>
-                                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                            </div>
+                        <div className="col-lg-7 gx-2 row" data-aos="fade-left" data-aos-delay="100">
+                            {
+                                personList.map(Person)
+                            }
+
+
                         </div>
                     </div>
                 </div>

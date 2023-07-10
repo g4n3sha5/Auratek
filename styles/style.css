@@ -1416,6 +1416,26 @@ section {
   /*background-image:url("../public/img/contact.webp")*/
   background-image:url("../public/img/anastasiya-dalenka-Warszawa.jpg")
 }
+.contactBox{
+border:1px solid rgba(15,15,15,0.8);
+  padding:2rem;
+
+}
+.contactBox i{
+  font-size:2rem;
+}
+.contactBox h5{
+  font-weight: 600;
+}
+.contactBox h6{
+  font-weight: 600;
+  letter-spacing:1.2px;
+  padding:5px 0 3px;
+}
+.contactBox h6:before{
+  font-weight: 300;
+  content:"+48 "
+}
 /*--------------------------------------------------------------
 
 # Breadcrumbs
