@@ -2,17 +2,17 @@ import Head from 'next/head'
 import {Inter} from 'next/font/google'
 
 
-import Navbar from "../components/Navbar";
-import Banner from "../components/Banner";
-import About from "../components/About";
-import Clients from "../components/Clients";
-import Features from "../components/Features";
-import Services from "../components/Services";
-import CTA from "../components/CTA";
-import Portfolio from "../components/Portfolio";
-import Two from "../components/Two";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+import Navbar from "../components/common/Navbar";
+import Banner from "../components/index/Banner";
+import About from "../components/index/About";
+import Clients from "../components/index/Clients";
+import Features from "../components/index/Features";
+import Services from "../components/index/Services";
+import CTA from "../components/index/CTA";
+import Portfolio from "../components/index/Portfolio";
+import Two from "../components/index/Two";
+import Contact from "../components/index/Contact";
+import Footer from "../components/common/Footer";
 
 
 
@@ -28,14 +28,15 @@ export default function Home() {
                     <Navbar/>
                     <Banner/>
                     <About/>
-                    <Clients/>
-                    <Features/>
+                    {/*<Clients/>*/}
+
                     <Services/>
+                    {/*<Features/>*/}
                     <CTA/>
-                    <Portfolio/>
+                    <Portfolio projectsList={projectsList}/>
                     {/*<Two/>*/}
                     <Contact/>
-                    <Footer/>
+                        <Footer/>
 
                 </div>
 
@@ -43,3 +44,25 @@ export default function Home() {
         </>
     )
 }
+
+
+const projectsList = [
+    {
+        key : "avenida",
+        name: "CH Avenida - przebudowa",
+        desc : "Przebudowa instalacji w CH AVENIDA w Poznaniu",
+        photoURL : "/img/chavenida.webp"
+    },
+    {
+        key : "nrynek",
+        name: "Nowy Rynek, Poznań",
+        desc : "Wykonanie zakresu fit-out w kompleksie biurowców",
+        photoURL : "/img/nowyrynek.webp"
+    },
+    {
+        key : "abc",
+        name: "Biurowce ABC, Poznań",
+        desc : "Wykonanie zakresu fit-out w kompleksie biurowców ABC",
+        photoURL : "/img/abc.webp"
+    },
+]
