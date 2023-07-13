@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 const Footer = () => {
@@ -20,12 +21,13 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="col-lg-2 col-md-6 footer-links">
-                            {/*<h4></h4>*/}
+                        <div className="col-lg-2 col-md-6 footer-links pt-3">
+
                             <ul>
-                                {/*<li><i className="bx bx-chevron-right"></i> <Link href="/">Home</Link></li>*/}
-                                {/*<li><i className="bx bx-chevron-right"></i> <Link href="/projekty/">Projekty</Link></li>*/}
-                                {/*<li><i className="bx bx-chevron-right"></i> <Link href="/contact/">Kontakt</Link></li>*/}
+                                <li><i className="bx bx-chevron-right"></i> <Link href="/">Home</Link></li>
+                                <li><i className="bx bx-chevron-right"></i> <Link href="/realizacje/">Nasze realizacje</Link></li>
+                                <li><i className="bx bx-chevron-right"></i> <Link href="/onas/">O nas</Link></li>
+                                <li><i className="bx bx-chevron-right"></i> <Link href="/contact/">Kontakt</Link></li>
                             </ul>
                         </div>
 

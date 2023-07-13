@@ -1,4 +1,24 @@
 const Contact = () =>{
+    async function handleSubmit(e) {
+        e.preventDefault();
+        const data = new FormData(e.currentTarget);
+        try{
+            const response = await fetch('api/contact',{
+                method:'post',
+                body: new URLSearchParams(data)
+            })
+
+            if(!response.ok){
+                throw new Error (`${response.status}`)
+            }
+        }
+        catch(err){
+            console.error(err)
+        }
+    }
+
+
+
     return(
         <section id="contact" className="contact">
             <div className="container" data-aos="fade-up">
@@ -38,7 +58,7 @@ const Contact = () =>{
 
                     <div className="col-lg-8 mt-5 mt-lg-0">
 
-                        <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+                        <form onSubmit={handleSubmit} method="post" role="form" className="email-form">
                             <div className="row">
                                 <div className="col-md-6 form-group">
                                     <input type="text" name="name" className="form-control" id="name"

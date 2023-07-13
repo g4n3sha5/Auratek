@@ -14,7 +14,7 @@ const About = () => {
                         <p>
                             Jesteśmy przedsiębiorstwem prywatnym, działamy na rynku branży instalacyjnej od 2008 roku.
                             Zakres naszej działalności obejmuje przede wszystkim wykonawstwo wewnętrznych instalacji
-                            sanitarnych oraz nadzory dot. realizacji
+                            sanitarnych i mechanicznych oraz nadzory dot. realizacji
                             przedsięwzięć budowlanych.
                         </p>
 
@@ -31,7 +31,7 @@ const About = () => {
                         </ul>
                         <p>
                             Naszą specjalnością są instalacje, począwszy od małych obiektów budowlanych, poprzez galerie
-                            handlowe, hipermarkety, hale magazynowe, budynki biurowe, po obiekty przemysłowe.
+                            handlowe, hipermarkety, hale magazynowe, budynki biurowe po obiekty przemysłowe.
                         </p>
                     </div>
                 </div>

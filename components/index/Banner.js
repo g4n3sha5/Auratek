@@ -12,11 +12,11 @@ const BoxComponent = ({text, icon}) =>{
     )
 }
 const boxList = [
-    {text:"Instalacje gazowe", icon:"ri-temp-hot-line"},
-    {text:"Instalacje węzłów ciepła", icon:"ri-temp-hot-line 2"},
+    {text:"Instalacje wentylacji i klimatyzacji", icon:"ri-temp-cold-fill"},
+    {text:"Instalacje grzewczo-chłodzące", icon:"ri-temp-hot-line 2"},
     {text:"Instalacje wodno-kanalizacyjne", icon:"bx bx-water"},
-    {text:"Nadzory inwestorskie", icon:"ri-clipboard-fill"},
-    {text:"Doradztwo w zakresie instalacji", icon:"ri-survey-line"},
+    {text:"Instalacje technologiczne", icon:"ri-home-wifi-fill"},
+    {text:"Instalacje gazowe i sprężonego powietrza", icon:"ri-windy-line"},
 
 ]
 

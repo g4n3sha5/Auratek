@@ -1,3 +1,38 @@
+const IconBox = ({name, desc, icon}) =>{
+    return(
+        <div className="icon-box mt-5 mt-lg-0 mb-4" data-aos="zoom-in" data-aos-delay="150">
+            <i className={icon}></i>
+            <h4>{name}</h4>
+            <p>{desc}</p>
+        </div>
+
+    )
+}
+
+const iconBoxes =[
+    {
+        name : "Wieloletnie doświadczenie",
+        desc : "Działamy na rynku instalacji od roku 2008, dzięki zdobytej przez te lata wiedzy możemy skutecznie obsługiwać nawet najbardziej wymagających klientów.",
+        icon : "bx bx-receipt"
+    },
+    {
+        name : "Jakość i profesjonalne podejście",
+        desc : "Dążymy do najwyższej jakości w każdym aspekcie naszej działalności. Skrupulatnie dbamy o szczegóły i dokładamy wszelkich starań, aby dostarczyć produkty/usługi o doskonałej jakości.",
+        icon : "bx bxs-user-check"
+    },
+    {
+        name : "Innowacyjność",
+        desc : "Jesteśmy zawsze na bieżąco z najnowszymi technologiami i trendami w naszej dziedzinie. Dążymy do stałego doskonalenia i wprowadzania innowacyjnych rozwiązań. Stale się rozwijamy, aby być liderem w naszej branży.",
+        icon : "bx bx-cube-alt"
+    },
+    {
+        name : "Elastyczność i precyzja",
+        desc : "Rozumiemy, że każdy klient jest inny i ma swoje unikalne potrzeby. Dlatego dokładnie słuchamy i współpracujemy z naszymi klientami, aby zrozumieć ich cele i dostosować nasze usługi lub produkty do ich indywidualnych wymagań.",
+        icon : "bx bx-target-lock"
+    },
+
+
+]
 
 
 const About = () => {
@@ -19,31 +54,17 @@ const About = () => {
 
                     <h2 className="px-5 w-100 text-center"></h2>
                     <div className="row">
-                        <div className=" col-lg-6">
+                        <div className=" col-lg-6 descriptions pt-4">
 
                                 <p>
-                                    Jesteśmy przedsiębiorstwem prywatnym, działamy na rynku branży instalacyjnej od 2008 roku.
-                                    Zakres naszej działalności obejmuje przede wszystkim wykonawstwo wewnętrznych instalacji
-                                    sanitarnych oraz nadzory dot. realizacji
-                                    przedsięwzięć budowlanych.
+                                    Jesteśmy dynamicznym przedsiębiorstwem prywatnym, które od 2008 roku działa na rynku branży instalacyjnej. Nasza firma specjalizuje się w kompleksowych rozwiązaniach z zakresu wewnętrznych instalacji sanitarnych oraz nadzoruje realizację różnorodnych przedsięwzięć budowlanych.
                                 </p>
-
-                                <ul>
-                                    <li><i className="ri-check-double-line"></i> Klientami AURATEK są firmy budowlane oraz
-                                        prywatni inwestorzy.
-                                    </li>
-                                    <li><i className="ri-check-double-line"></i> Działamy zarówno na obiektach przemysłowych jak
-                                        również użyteczności publicznej.
-                                    </li>
-                                    <li><i className="ri-check-double-line"></i> Firma działa zarówno na terenie Polski, jak i
-                                        za granicą
-                                    </li>
-                                </ul>
-                                <p>
-                                    Naszą specjalnością są instalacje, począwszy od małych obiektów budowlanych, poprzez galerie
-                                    handlowe, hipermarkety, hale magazynowe, budynki biurowe, po obiekty przemysłowe.
+                            <p>
+                                Dzięki naszemu doświadczeniu i profesjonalizmowi, wykonujemy projekty na obiektach przemysłowych oraz w sektorze użyteczności publicznej. Niezależnie od skali i złożoności projektu, zapewniamy wysoką jakość usług na terenie Polski oraz za granicą.
+                            </p>
+                            <p>
+                                  Jesteśmy gotowi podjąć wyzwania każdego projektu i dostarczyć rozwiązania, które spełnią oczekiwania naszych klientów. Dołącz do grona zadowolonych partnerów, którzy czerpią korzyści z naszej fachowej wiedzy i doświadczenia.
                                 </p>
-
 
 
 
@@ -52,26 +73,9 @@ const About = () => {
 
 
                         <div className="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-                            <div className="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                                <i className="bx bx-receipt"></i>
-                                <h4>Wieloletnie doświadczenie</h4>
-                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                            </div>
-                            <div className="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-                                <i className="bx bx-cube-alt"></i>
-                                <h4>Profesjonalne podejście</h4>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                            </div>
-                            <div className="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-                                <i className="bx bx-images"></i>
-                                <h4>Wielokrotne wyróżnienia</h4>
-                                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                            </div>
-                            <div className="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-                                <i className="bx bx-shield"></i>
-                                <h4>Kompleksowa obsługa</h4>
-                                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                            </div>
+                            {
+                                iconBoxes.map(IconBox)
+                            }
                         </div>
                     </div>
                 </div>

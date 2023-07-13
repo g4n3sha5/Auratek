@@ -42,11 +42,11 @@ export const Person = ({key, name, tel, email}) => {
     return (
 
 
-        <div className="icon-box  col-lg-6 py-3 px-2" data-aos="zoom-in" data-aos-delay="150">
+        <div key={key} className="icon-box  col-lg-6 py-3 px-2" data-aos="zoom-in" data-aos-delay="150">
             <div className="contactBox">
-                <i className='bx bx-id-card'></i>
                 <h4>{name}</h4>
-                <h6>{tel}</h6>
+                <i className='bx bxs-phone d-inline'></i> <h6 className="d-inline">{tel}</h6>
+                <i className='bx bx-envelope mt-4 d-block'></i>
                 <h5>{email}</h5>
             </div>
         </div>
@@ -68,7 +68,7 @@ const Contact = () => {
 
                 </div>
 
-                <div className="container p-3 px-5 ">
+                <div className="container p-3 px-5  ">
 
                     <div className="row p-3">
                         <div className="col-lg-5  px-2">
@@ -76,8 +76,12 @@ const Contact = () => {
                             <p>ul. Konstytucji 3 Maja 1/60
 
                                 63-100 Śrem</p>
-                            <h3>tel. kom. +48 500 180 044</h3>
-                            <h3>E-mail:biuro@auratek.pl</h3>
+
+                             <h4>NIP 7851056613</h4>
+                             <h4>REGON 300950531</h4>
+                            <br/>
+                             <h3><i className='bx bxs-phone'></i> +48 500 180 044</h3>
+                            <h4><i className='bx bx-envelope'></i> biuro@auratek.pl</h4>
                         </div>
 
 

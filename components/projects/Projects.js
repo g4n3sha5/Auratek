@@ -16,7 +16,7 @@ export const projectsList = [
     {
         key: "abc",
         name: "Biurowce ABC, Poznań",
-        desc: "Wykonanie zakresu fit-out w kompleksie biurowców ABC",
+        desc: "Wykonanie zakresu fit-out w biurowcu ABC",
         photoURL: "/img/abc.webp"
     },
 
@@ -58,7 +58,7 @@ export const projectsList = [
     {
         key: "malta",
         name: "MALTA HOUSE, Poznań",
-        desc: "Budowa biurowca MALTA HOUSE w Poznaniu (montaż instalacji na instalacji rurowej)",
+        desc: "Wykonanie zakresu fit-out w biurowcu MALTA HOUSE",
         photoURL: "/img/maltahouse.webp"
     },
 
@@ -111,14 +111,14 @@ export const Project = ({key, name, desc, photoURL}) => {
     return (
         <div key={key} className="col-lg-4 col-md-6 portfolio-item ">
             <div className="portfolio-wrap h-100">
-                <img src={photoURL} className="img-fluid h-100" alt=""/>
-                <div className="portfolio-info ">
+                <img src={photoURL} className=" w-100 h-100" alt=""/>
+                <div className="portfolio-info pb-lg-3">
                     <h4>{name}</h4>
                     <p>{desc}</p>
-                    <div className="portfolio-links">
-                        <a href="../../portfolio-details.html" title="More Details"><i
-                            className="bx bx-link"></i></a>
-                    </div>
+                    {/*<div className="portfolio-links">*/}
+                    {/*    /!*<a href="../../portfolio-details.html" title="More Details"><i*!/*/}
+                    {/*    /!*    className="bx bx-link"></i></a>*!/*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </div>
@@ -128,9 +128,10 @@ export const Project = ({key, name, desc, photoURL}) => {
 const Projects = () => {
     return (
 
-        <section id="Projects" className="bannerSection">
-            <div className="container-fluid px-0 ">
-                <div className="imageBanner   d-flex align-items-center justify-content-center w-100 h-100">
+        <section id="Projects" className="bannerSection p-0" >
+            <div className="container-fluid px-0  ">
+                <div className="imageBanner
+                  d-flex align-items-center justify-content-center w-100 h-100 ">
 
                 {/*style={{*/}
                 {/*     //     backgroundImage: `url("/img/posnaniafyrtel.jpg")`*/}
@@ -142,12 +143,15 @@ const Projects = () => {
                 </div>
 
 
-                <div className="container p-3 px-5 containerStyling">
+                <div className="container p-3 px-xl-5 containerStyling my-5">
+
+                    <div className="w-100 d-flex justify-content-center">
+                        <h2 className="header1 text-center w-75 ">W swojej długoletniej działalności nasza firma realizowała szereg inwestycji.
+                            Najważniejsze z nich to:</h2>
+                    </div>
 
 
-                    <h2 className="px-5 w-100 text-center">W swojej długoletniej działalności nasza firma realizowała szereg inwestycji.
-                        Najważniejsze z nich to:</h2>
-                    <div className="row p-3">
+                    <div className="row p-xl-3">
 
 
                         {

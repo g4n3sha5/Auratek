@@ -35,7 +35,7 @@ const Services = () =>{
                     <p>Nasza działalność</p>
                 </div>
 
-                <div className="row">
+                <div className="row d-flex justify-content-center">
                     {
                         servicesList.map(ServiceComponent)
                     }

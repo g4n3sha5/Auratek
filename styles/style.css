@@ -171,12 +171,6 @@ a:hover {
   color: #343a40;
 }
 
-@media (max-width: 992px) {
-  .get-started-btn {
-    padding: 7px 20px 8px 20px;
-    margin-right: 15px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -756,39 +750,9 @@ section {
 --------------------------------------------------------------*/
  .portfolio-item {
   margin-bottom: 30px;
-
+   max-height:300px;
 }
 
- #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
-}
-
-#portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 15px 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  /*text-transform: uppercase;*/
-  color: #444444;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-  border-radius: 3px;
-}
-
-#portfolio-flters li:hover,
-#portfolio-flters li.filter-active {
-  color: #151515;
-  background: var(--primaryColor);
-}
-
-#portfolio-flters li:last-child {
-  margin-right: 0;
-}
 
  .portfolio-wrap {
   transition: 0.3s;
@@ -797,6 +761,7 @@ section {
   z-index: 1;
   background: rgba(21, 21, 21, 0.6);
   border:1x solid var(--primaryColor);
+
  }
 
  .portfolio-wrap::before {
@@ -830,6 +795,8 @@ section {
   justify-content: flex-end;
   align-items: flex-start;
   padding: 20px;
+
+   height:100%;
 }
 
  .portfolio-wrap .portfolio-info h4 {
@@ -840,7 +807,8 @@ section {
 
  .portfolio-wrap .portfolio-info p {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
+  font-size: 17px;
+   font-weight:300;
   /*text-transform: uppercase;*/
   padding: 0;
   margin: 0;
@@ -1260,16 +1228,16 @@ section {
   margin-top: 40px;
 }
 
-.contact .php-email-form {
+.contact .email-form {
   width: 100%;
   background: #fff;
 }
 
-.contact .php-email-form .form-group {
+.contact .email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .error-message {
+.contact .email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1278,11 +1246,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .email-form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1291,14 +1259,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1310,28 +1278,28 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .email-form input,
+.contact .email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 4px;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact .email-form input:focus,
+.contact .email-form textarea:focus {
   border-color: var(--primaryColor);
 }
 
-.contact .php-email-form input {
+.contact .email-form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .email-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .email-form button[type=submit] {
   background: var(--primaryColor);
   border: 0;
   padding: 10px 24px;
@@ -1340,7 +1308,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .email-form button[type=submit]:hover {
   background: #ffcd6b;
 }
 
@@ -1357,6 +1325,13 @@ section {
 /*--------------------------------------------------------------
 # Projects
 --------------------------------------------------------------*/
+.header1{
+  font-family: "Raleway", sans-serif;
+  font-weight:400;
+  font-size:1.9rem;
+
+}
+
 .bannerSection{
   min-height: 100vh;
 
@@ -1370,10 +1345,10 @@ section {
 {
   background:rgba(248,248,255,0.83);
   color:black;
-  min-width:85%;
+  min-width:90%;
   z-index:25;
-  position:relative;
-  top:-50px;
+  /*position:relative;*/
+  /*top:-50px;*/
 }
 .imageBanner{
   width:100%;
@@ -1425,7 +1400,7 @@ border:1px solid rgba(15,15,15,0.8);
   font-size:2rem;
 }
 .contactBox h5{
-  font-weight: 600;
+  font-weight: 500;
 }
 .contactBox h6{
   font-weight: 600;
@@ -1433,8 +1408,21 @@ border:1px solid rgba(15,15,15,0.8);
   padding:5px 0 3px;
 }
 .contactBox h6:before{
-  font-weight: 300;
+  font-weight: 500;
   content:"+48 "
+}
+#Contact .icon-box{
+
+}
+#Contact .icon-box i{
+  font-size:23px;
+}
+#Contact .descriptions{
+  padding-right:45px;
+}
+#Contact .descriptions p{
+  font-size:1.1rem;
+  letter-spacing:1px;
 }
 /*--------------------------------------------------------------
 
