@@ -6,7 +6,6 @@ import Navbar from "../components/common/Navbar";
 import Banner from "../components/index/Banner";
 import About from "../components/index/About";
 import Clients from "../components/index/Clients";
-import Features from "../components/index/Features";
 import Services from "../components/index/Services";
 import CTA from "../components/index/CTA";
 import Portfolio from "../components/index/Portfolio";
@@ -28,13 +27,9 @@ export default function Home() {
                     <Navbar/>
                     <Banner/>
                     <About/>
-                    {/*<Clients/>*/}
-
                     <Services/>
-                    {/*<Features/>*/}
                     <CTA/>
                     <Portfolio projectsList={projectsList}/>
-                    {/*<Two/>*/}
                     <Contact/>
                         <Footer/>
 
@@ -61,7 +56,7 @@ const projectsList = [
     },
     {
         key : "abc",
-        name: "Biurowce ABC, Poznań",
+        name: "Biurowiec ABC, Poznań",
         desc : "Wykonanie zakresu fit-out w kompleksie biurowców ABC",
         photoURL : "/img/abc.webp"
     },

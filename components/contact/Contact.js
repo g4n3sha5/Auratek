@@ -42,8 +42,8 @@ export const Person = ({key, name, tel, email}) => {
     return (
 
 
-        <div key={key} className="icon-box  col-lg-6 py-3 px-2" data-aos="zoom-in" data-aos-delay="150">
-            <div className="contactBox">
+        <div key={key} className="icon-box  col-lg-6 col-12 py-3 px-2" data-aos="zoom-in" data-aos-delay="150">
+            <div className="contactBox overflow-hidden ">
                 <h4>{name}</h4>
                 <i className='bx bxs-phone d-inline'></i> <h6 className="d-inline">{tel}</h6>
                 <i className='bx bx-envelope mt-4 d-block'></i>
@@ -68,9 +68,9 @@ const Contact = () => {
 
                 </div>
 
-                <div className="container p-3 px-5  ">
+                <div className="container p-3 px-0 px-lg-5  ">
 
-                    <div className="row p-3">
+                    <div className="row p-3 ">
                         <div className="col-lg-5  px-2">
                             <h2>AURATEK Marcin Wojciechowski</h2>
                             <p>ul. Konstytucji 3 Maja 1/60
@@ -80,8 +80,8 @@ const Contact = () => {
                              <h4>NIP 7851056613</h4>
                              <h4>REGON 300950531</h4>
                             <br/>
-                             <h3><i className='bx bxs-phone'></i> +48 500 180 044</h3>
-                            <h4><i className='bx bx-envelope'></i> biuro@auratek.pl</h4>
+                             <h4><i className='bx bxs-phone me-3'></i>+48 500 180 044</h4>
+                            <h4><i className='bx bx-envelope me-3'></i>biuro@auratek.pl</h4>
                         </div>
 
 

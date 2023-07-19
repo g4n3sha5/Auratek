@@ -3,12 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="e68ed32b-7e19-4421-a36e-0eddaceaaf54" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/index/Banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/Banner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/index/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/Portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/index/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/contact/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/index/Features.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/projects/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/glightbox/css/glightbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/glightbox/css/glightbox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/glightbox/css/plyr.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/glightbox/css/plyr.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/glightbox/js/glightbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/glightbox/js/glightbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/isotope-layout/isotope.pkgd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/isotope-layout/isotope.pkgd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/purecounter/purecounter_vanilla.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/purecounter/purecounter_vanilla.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +107,8 @@
       <workItem from="1689256952257" duration="2061000" />
       <workItem from="1689598567553" duration="4493000" />
       <workItem from="1689673893945" duration="6093000" />
-      <workItem from="1689753985841" duration="813000" />
+      <workItem from="1689753985841" duration="2068000" />
+      <workItem from="1689776061471" duration="1120000" />
     </task>
     <servers />
   </component>

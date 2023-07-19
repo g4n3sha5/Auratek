@@ -628,50 +628,12 @@ section {
   background-color: var(--primaryColor);
 }
 
-/*--------------------------------------------------------------
-# Features
---------------------------------------------------------------*/
-.features {
-  padding-top: 20px;
-}
-
-.features .icon-box {
-  padding-left: 15px;
-
-}
-
-.features .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 5px 0 10px 60px;
-}
-
-.features .icon-box i {
-  font-size: 48px;
-  float: left;
-  color: var(--primaryColor);
-  /*color: var(--primaryColor);*/
-}
-
-.features .icon-box p {
-  font-size: 15px;
-  color: #848484;
-  margin-left: 60px;
-}
-
-.features .image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 400px;
-}
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  text-align: center;
-  border: 1px solid #ebebeb;
+  /*--------------------------------------------------------------
+  # Services
+  --------------------------------------------------------------*/
+  .services .icon-box {
+    text-align: center;
+    border: 1px solid #ebebeb;
   padding: 30px 20px;
   transition: all ease-in-out 0.3s;
   background: 	rgb(228,228,228);
@@ -1408,13 +1370,14 @@ section {
 .contactBox{
 border:1px solid rgba(15,15,15,0.8);
   padding:2rem;
-
+  height: 100%;
 }
 .contactBox i{
   font-size:2rem;
 }
 .contactBox h5{
   font-weight: 500;
+  word-wrap: break-word ;
 }
 .contactBox h6{
   font-weight: 600;
@@ -1438,6 +1401,7 @@ border:1px solid rgba(15,15,15,0.8);
   font-size:1.1rem;
   letter-spacing:1px;
 }
+
 /*--------------------------------------------------------------
 
 # Breadcrumbs

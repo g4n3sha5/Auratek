@@ -15,7 +15,7 @@ export const projectsList = [
 
     {
         key: "abc",
-        name: "Biurowce ABC, Poznań",
+        name: "Biurowiec ABC, Poznań",
         desc: "Wykonanie zakresu fit-out w biurowcu ABC",
         photoURL: "/img/abc.webp"
     },
