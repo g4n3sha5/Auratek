@@ -18,7 +18,7 @@ const Portfolio = () =>{
                 </p>
 
 
-                <div className="row " data-aos="fade-up" data-aos-delay="200">
+                <div className="row d-flex justify-content-center " data-aos="fade-up" data-aos-delay="200">
 
 
                     {

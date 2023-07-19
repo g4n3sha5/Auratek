@@ -20,7 +20,7 @@ const servicesList = [
     {icon: "ri-temp-hot-line", name:"Instalacje gazowe i węzłów ciepła"},
     {icon: "bx bx-wind", name:"Instalacje sprężonego powietrza"},
     {icon: "bx bxs-home-smile", name:"Instalacje odwodnienia dachów"},
-    {icon: "bx bx-list-check", name:"Nadzory inwestorskie"},
+    {icon: "bx bx-list-check", name:"Projektowanie i kosztorysowanie"},
     {icon: "bx bxs-chalkboard", name:"Doradztwo w zakresie instalacji sanitarnych"}
 ]
 

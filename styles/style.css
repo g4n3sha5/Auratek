@@ -130,8 +130,8 @@ a:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 
-#header .logo {
-  font-size: 32px;
+#header .logo a {
+  font-size: 32px !important;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -152,9 +152,6 @@ a:hover {
   max-height: 40px;
 }
 
-/*--------------------------------------------------------------
-#  Get Startet Button
---------------------------------------------------------------*/
 .get-started-btn {
   color: black;
   border-radius: 4px;
@@ -309,8 +306,18 @@ a:hover {
   .navbar ul {
     display: none;
   }
-}
 
+}
+#navbar ul{
+  /*transition: transform 0.4s ease 0s;*/
+  /*height:180px;*/
+  /*transform: translateY(-180px);*/
+  /*z-index:1;*/
+}
+#navbar.navShow ul{
+  /*transform: translateY(0);*/
+  display:block;
+}
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -395,7 +402,9 @@ a:hover {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-
+.nav-item:hover{
+  cursor: pointer;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -422,14 +431,19 @@ a:hover {
   padding-top: 74px;
   text-align: center;
 }
-
+@media (min-width: 1028px) {
+  #hero .container {
+  width:78% !important;
+    max-width:none;
+  }
+}
 #hero h1 {
   margin: 0;
   font-size: 56px;
   font-weight: 700;
   line-height: 64px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  /*font-family: "Raleway", sans-serif;*/
 }
 
 #hero h1 span {

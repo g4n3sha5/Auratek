@@ -1,16 +1,16 @@
-import {useRef, useState} from "react";
+import {useEffect, useRef} from "react";
 import Link from "next/link";
 
 const NavItem = ({name, href}) => {
     return (
-        <li className="nav-item" key={name}>
-            <Link className="nav-link" href={href} scroll={false}>
+        <li className="nav-item  d-flex justify-content-center mx-2 " key={name}>
+            <Link className="nav-link w-100 d-flex justify-content-center" href={href} scroll={false}>
                 {name}
             </Link>
         </li>
     )
 }
-const NAV_ITEMS = [
+export const NAV_ITEMS = [
     {name: "Home", href: "/"},
     {name: "Nasze realizacje", href: "/realizacje/"},
     {name: "O nas", href: "/onas/"},
@@ -22,26 +22,53 @@ const Navbar = () => {
 
     const handleClick = () =>{
         navRef.current.classList.toggle('navShow')
+        console.log(navRef.current.classList)
+        navRef.current.classList.toggle('d-none')
     }
 
+    useEffect(() => {
+        let listener = () => {
+            navRef.current.classList.remove('navShow')
+            navRef.current.classList.add('d-none')
+        }
+        window.addEventListener('resize', listener);
+        return () => window.removeEventListener('resize', listener);
+    }, []);
 
 
     return (
         <header  id="header" className="fixed-top ">
-            <div className="container d-flex align-items-center justify-content-lg-between ">
+            <div className="navbar container d-flex align-items-center justify-content-lg-between justify-content-center navbar-expand-xl navbar-dark px-4">
+                <h1 className="navbar-brand logo me-auto me-lg-0 w-25 d-inline"><Link href="/">AURATEK</Link></h1>
+                <button
+                    className="navbar-toggler mr-3 d-xl-none"
+                    type="button"
+                    aria-controls="navigation"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    onClick={() => handleClick()}
+                >
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <nav  ref={navRef} id="navbar" className="navbar-collapse d-none d-xl-flex order-last order-lg-0
+                justify-content-center justify-content-xl-end ">
 
-                <h1 className="logo me-auto me-lg-0"><Link href="/">AURATEK<span></span></Link></h1>
 
-                <nav id="navbar" className="navbar order-last order-lg-0 ">
-                    <ul ref={navRef}>
+
+                    <ul className="navbar-nav">
                         {
                             NAV_ITEMS.map(NavItem)
                         }
 
 
                     </ul>
-                    <i onClick={() => handleClick}
-                       className="bi bi-list mobile-nav-toggle"></i>
+
+                    {/*<i  className="bi bi-list mobile-nav-toggle">*/}
+                    {/*</i>*/}
+
+
+
+
                 </nav>
 
             </div>

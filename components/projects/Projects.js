@@ -147,11 +147,11 @@ const Projects = () => {
 
                     <div className="w-100 d-flex justify-content-center">
                         <h2 className="header1 text-center w-75 ">W swojej długoletniej działalności nasza firma realizowała szereg inwestycji.
-                            Najważniejsze z nich to:</h2>
+                            Najważniejsze z nich to między innymi:</h2>
                     </div>
 
 
-                    <div className="row p-xl-3">
+                    <div className="row p-xl-3 d-flex justify-content-center">
 
 
                         {

@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import {NAV_ITEMS} from "./Navbar";
 
 const Footer = () => {
     return (
@@ -24,10 +24,13 @@ const Footer = () => {
                         <div className="col-lg-2 col-md-6 footer-links pt-3">
 
                             <ul>
-                                <li><i className="bx bx-chevron-right"></i> <Link href="/">Home</Link></li>
-                                <li><i className="bx bx-chevron-right"></i> <Link href="/realizacje/">Nasze realizacje</Link></li>
-                                <li><i className="bx bx-chevron-right"></i> <Link href="/onas/">O nas</Link></li>
-                                <li><i className="bx bx-chevron-right"></i> <Link href="/contact/">Kontakt</Link></li>
+                                {
+                                    NAV_ITEMS.map(({name, href}) =>{
+                                        return  <li key={name}><i className="bx bx-chevron-right"></i> <Link href={href}>{name}</Link></li>
+                                    })
+                                }
+
+
                             </ul>
                         </div>
 
