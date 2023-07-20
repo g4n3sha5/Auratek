@@ -4,7 +4,8 @@
   <a href="https://github.com/g4n3sha5/Auratek">
     <img src="public/img/favicon.png" alt="Logo" width="80" height="80">
   </a>
-
+## About The Project
+  
 <h3 align="center">Auratek</h3>
 
   <p align="center">
@@ -12,8 +13,6 @@
     
   </p>
 </div>
-
-## About The Project
 
 [![auratek.webp](https://i.postimg.cc/G3YW8KDq/auratek.webp)](https://postimg.cc/9zm8sGJ7)
 
