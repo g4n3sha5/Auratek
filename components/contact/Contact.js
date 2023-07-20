@@ -42,7 +42,7 @@ export const Person = ({key, name, tel, email}) => {
     return (
 
 
-        <div key={key} className="icon-box  col-lg-6 col-12 py-3 px-2" data-aos="zoom-in" data-aos-delay="150">
+        <div key={key} className="icon-box  col-lg-6 col-md-10 col-12 py-3 px-lg-2 px-0" data-aos="zoom-in" data-aos-delay="150">
             <div className="contactBox overflow-hidden ">
                 <h4>{name}</h4>
                 <i className='bx bxs-phone d-inline'></i> <h6 className="d-inline">{tel}</h6>
@@ -70,8 +70,8 @@ const Contact = () => {
 
                 <div className="container p-3 px-0 px-lg-5  ">
 
-                    <div className="row p-3 ">
-                        <div className="col-lg-5  px-2">
+                    <div className="row p-3 d-flex justify-content-center">
+                        <div className="col-lg-4 px-2 col-12">
                             <h2>AURATEK Marcin Wojciechowski</h2>
                             <p>ul. Konstytucji 3 Maja 1/60
 
@@ -85,7 +85,7 @@ const Contact = () => {
                         </div>
 
 
-                        <div className="col-lg-7 gx-2 row" data-aos="fade-left" data-aos-delay="100">
+                        <div className="col-lg-8 col-12 gx-2 row d-flex justify-content-center justify-content-lg-start" data-aos="fade-left" data-aos-delay="100">
                             {
                                 personList.map(Person)
                             }
