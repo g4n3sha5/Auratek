@@ -16,7 +16,7 @@
   </p>
 </div>
 
-[![auratek.webp](https://i.postimg.cc/G3YW8KDq/auratek.webp)](https://postimg.cc/9zm8sGJ7)
+[![auratek.webp](https://i.postimg.cc/G3YW8KDq/auratek.webp)](www.auratek.pl)
 
 
 ### Built With
