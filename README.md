@@ -1,3 +1,5 @@
+## About 
+
 
 <br />
 <div align="center">
@@ -5,6 +7,7 @@
     <img src="public/img/favicon.png" alt="Logo" width="80" height="80">
   </a>
 
+  
 <h3 align="center">Auratek</h3>
 
   <p align="center">
@@ -13,9 +16,7 @@
   </p>
 </div>
 
-## About The Project
-
-[![auratek.webp](https://i.postimg.cc/G3YW8KDq/auratek.webp)](https://postimg.cc/9zm8sGJ7)
+[![auratek.webp](https://i.postimg.cc/G3YW8KDq/auratek.webp)](www.auratek.pl)
 
 
 ### Built With
