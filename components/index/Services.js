@@ -6,7 +6,7 @@ const ServiceComponent = ({icon = "bx bxl-dribbble", name , text}) =>{
           data-aos-delay="100">
          <div className="icon-box w-100">
              <div className="icon"><i className={icon}></i></div>
-             <h4><a href="components/index/Services">{name}</a></h4>
+             <h4>{name}</h4>
 
          </div>
      </div>
