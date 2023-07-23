@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e68ed32b-7e19-4421-a36e-0eddaceaaf54" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/components/index/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Desktop/PROJEKTY/kamilmatysiak.pl&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Desktop/PROJEKTY/SklepMatysiak&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -94,6 +96,8 @@
       <workItem from="1689776061471" duration="1120000" />
       <workItem from="1689793434780" duration="795000" />
       <workItem from="1689857476267" duration="3022000" />
+      <workItem from="1690114913414" duration="12000" />
+      <workItem from="1690150475638" duration="437000" />
     </task>
     <servers />
   </component>

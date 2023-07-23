@@ -4,7 +4,7 @@ import Link from "next/link";
 const NavItem = ({name, href}) => {
     return (
         <li className="nav-item  d-flex justify-content-center mx-2 " key={name}>
-            <Link className="nav-link w-100 d-flex justify-content-center" href={href} scroll={false}>
+            <Link className="nav-link w-100 d-block text-center" href={href} scroll={false}>
                 {name}
             </Link>
         </li>
