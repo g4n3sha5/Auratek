@@ -1,13 +1,4 @@
-const IconBox = ({name, desc, icon}) =>{
-    return(
-        <div className="icon-box mt-5 mt-lg-0 mb-4" data-aos="zoom-in" data-aos-delay="150">
-            <i className={icon}></i>
-            <h4>{name}</h4>
-            <p>{desc}</p>
-        </div>
-
-    )
-}
+import ImageBanner from "../common/ImageBanner.js"
 
 const iconBoxes =[
     {
@@ -34,19 +25,27 @@ const iconBoxes =[
 
 ]
 
+const IconBox = ({name, desc, icon}) =>{
+    return(
+        <div className="icon-box mt-5 mt-lg-0 mb-4" data-aos="zoom-in" data-aos-delay="150">
+            <i className={icon}></i>
+            <h4>{name}</h4>
+            <p>{desc}</p>
+        </div>
+
+    )
+}
 
 const About = () => {
     return (
 
-        <section id="Contact" className="bannerSection">
+        <section id="Contact" className="bannerSection p-0">
             <div className="container-fluid px-0 ">
-                <div className="imageBanner   d-flex align-items-center justify-content-center w-100 h-100">
 
-
-                    <h1>O nas</h1>
-
-
-                </div>
+                <ImageBanner text="O nas"/>
+                    {/*<div className="imageBanner   d-flex align-items-center justify-content-center w-100 h-100">*/}
+                    {/*    <h1>O nas</h1>*/}
+                    {/*</div>*/}
 
 
                 <div className="container p-3 px-5 ">

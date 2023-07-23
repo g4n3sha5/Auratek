@@ -1,3 +1,64 @@
+import ImageBanner from "../common/ImageBanner";
+
+
+export const Project = ({key, name, desc, photoURL}) => {
+    return (
+        <div key={key} className="col-lg-4 col-md-6 portfolio-item ">
+            <div className="portfolio-wrap h-100">
+                <img src={photoURL} className=" w-100 h-100" alt=""/>
+                <div className="portfolio-info pb-lg-3">
+                    <h4>{name}</h4>
+                    <p>{desc}</p>
+                    {/*<div className="portfolio-links">*/}
+                    {/*    /!*<a href="../../portfolio-details.html" title="More Details"><i*!/*/}
+                    {/*    /!*    className="bx bx-link"></i></a>*!/*/}
+                    {/*</div>*/}
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const Projects = () => {
+    return (
+
+        <section id="Projects" className="bannerSection p-0" >
+            <div className="container-fluid px-0  ">
+
+                <ImageBanner text="Nasze realizacje"/>
+
+                <div className="container p-3 px-xl-5 containerStyling my-5">
+
+                    <div className="w-100 d-flex justify-content-center">
+                        <h2 className="header1 text-center w-75 ">W swojej długoletniej działalności nasza firma realizowała szereg inwestycji.
+                            Najważniejsze z nich to między innymi:</h2>
+                    </div>
+
+
+                    <div className="row p-xl-3 d-flex justify-content-center">
+
+
+                        {
+                            projectsList.map(Project)
+                        }
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    )
+}
+export default Projects
+
+
+
+
+
+
+
+
 export const projectsList = [
     {
         key: "avenida",
@@ -106,64 +167,3 @@ export const projectsList = [
 
 
 ]
-
-export const Project = ({key, name, desc, photoURL}) => {
-    return (
-        <div key={key} className="col-lg-4 col-md-6 portfolio-item ">
-            <div className="portfolio-wrap h-100">
-                <img src={photoURL} className=" w-100 h-100" alt=""/>
-                <div className="portfolio-info pb-lg-3">
-                    <h4>{name}</h4>
-                    <p>{desc}</p>
-                    {/*<div className="portfolio-links">*/}
-                    {/*    /!*<a href="../../portfolio-details.html" title="More Details"><i*!/*/}
-                    {/*    /!*    className="bx bx-link"></i></a>*!/*/}
-                    {/*</div>*/}
-                </div>
-            </div>
-        </div>
-    )
-}
-
-const Projects = () => {
-    return (
-
-        <section id="Projects" className="bannerSection p-0" >
-            <div className="container-fluid px-0  ">
-                <div className="imageBanner
-                  d-flex align-items-center justify-content-center w-100 h-100 ">
-
-                {/*style={{*/}
-                {/*     //     backgroundImage: `url("/img/posnaniafyrtel.jpg")`*/}
-                {/*     // }}>*/}
-
-                    <h1>Nasze realizacje</h1>
-
-
-                </div>
-
-
-                <div className="container p-3 px-xl-5 containerStyling my-5">
-
-                    <div className="w-100 d-flex justify-content-center">
-                        <h2 className="header1 text-center w-75 ">W swojej długoletniej działalności nasza firma realizowała szereg inwestycji.
-                            Najważniejsze z nich to między innymi:</h2>
-                    </div>
-
-
-                    <div className="row p-xl-3 d-flex justify-content-center">
-
-
-                        {
-                            projectsList.map(Project)
-                        }
-
-
-                    </div>
-                </div>
-            </div>
-
-        </section>
-    )
-}
-export default Projects

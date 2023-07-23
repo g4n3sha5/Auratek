@@ -1,3 +1,5 @@
+import ImageBanner from "../common/ImageBanner";
+
 export const personList = [
     {
         key: "MarcinW",
@@ -60,13 +62,7 @@ const Contact = () => {
 
         <section id="Contact" className="bannerSection">
             <div className="container-fluid px-0 ">
-                <div className="imageBanner   d-flex align-items-center justify-content-center w-100 h-100">
-
-
-                    <h1>Kontakt</h1>
-
-
-                </div>
+                <ImageBanner text="Kontakt"/>
 
                 <div className="container p-3 px-0 px-lg-5  ">
 

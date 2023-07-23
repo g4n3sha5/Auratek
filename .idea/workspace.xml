@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e68ed32b-7e19-4421-a36e-0eddaceaaf54" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/about/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/about/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/projects/Projects.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,7 @@
       <workItem from="1689793434780" duration="795000" />
       <workItem from="1689857476267" duration="3022000" />
       <workItem from="1690114913414" duration="12000" />
-      <workItem from="1690150475638" duration="437000" />
+      <workItem from="1690150475638" duration="1062000" />
     </task>
     <servers />
   </component>
