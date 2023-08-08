@@ -38,3 +38,6 @@ jspm_packages
 .next
 
 .env
+startAuratek.bat
+.idea
+workspace.xml

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e68ed32b-7e19-4421-a36e-0eddaceaaf54" name="Changes" comment="" />
+    <list default="true" id="e68ed32b-7e19-4421-a36e-0eddaceaaf54" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/contact/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/projects/Projects.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,13 +42,14 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Desktop/PROJEKTY/SklepMatysiak&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Desktop/PROJEKTY/auratek-next&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -93,7 +99,11 @@
       <workItem from="1689793434780" duration="795000" />
       <workItem from="1689857476267" duration="3022000" />
       <workItem from="1690114913414" duration="12000" />
-      <workItem from="1690150475638" duration="1873000" />
+      <workItem from="1690150475638" duration="2513000" />
+      <workItem from="1690153617051" duration="36000" />
+      <workItem from="1690447736127" duration="617000" />
+      <workItem from="1690462001041" duration="594000" />
+      <workItem from="1690494440343" duration="598000" />
     </task>
     <servers />
   </component>

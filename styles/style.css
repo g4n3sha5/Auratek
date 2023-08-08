@@ -411,7 +411,7 @@ a:hover {
   cursor: pointer;
 }
 /*--------------------------------------------------------------
-# Hero Section
+# Index Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
@@ -1348,7 +1348,6 @@ section {
   z-index:0;
   width:100%;
   height:420px;
-
   background-image:url("../public/img/posnaniafyrtel.jpg");
   -webkit-filter: blur(2px) brightness(35%) hue-rotate(24deg) saturate(108%);
   filter: blur(2.2px) brightness(38%) hue-rotate(-45deg) saturate(112%);

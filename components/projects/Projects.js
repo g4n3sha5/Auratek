@@ -52,13 +52,6 @@ const Projects = () => {
 }
 export default Projects
 
-
-
-
-
-
-
-
 export const projectsList = [
     {
         key: "avenida",
