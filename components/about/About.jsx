@@ -6,7 +6,6 @@ export const About = () => {
       <div className="container-fluid px-0 ">
         <ImageBanner text="O nas" />
         <div className="container p-3 px-5 ">
-          <h2 className="px-5 w-100 text-center"></h2>
           <div className="row">
             <div className=" col-lg-6 descriptions pt-4">
               <p>

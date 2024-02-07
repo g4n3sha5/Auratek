@@ -48,7 +48,7 @@ export const Contact = () => {
           </div>
 
           <div className="col-lg-8 mt-5 mt-lg-0">
-            <form onSubmit={handleSubmit} method="post" role="form" className="email-form">
+            <form onSubmit={handleSubmit} method="post" className="email-form">
               <div className="row">
                 <div className="col-md-6 form-group">
                   <input type="text" name="name" className="form-control" id="name" placeholder="Twoje imię" required />
