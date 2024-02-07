@@ -3,7 +3,7 @@ import { ImageBanner } from '../common/ImageBanner';
 export const Projects = () => (
   <section id="Projects" className="bannerSection p-0">
     <div className="container-fluid px-0  ">
-      <ImageBanner text="Nasze realizacje" />
+      <ImageBanner text="Nasze realizacje" src="/img/posnaniafyrtel.jpg" />
 
       <div className="container p-3 px-xl-5 containerStyling my-5">
         <div className="w-100 d-flex justify-content-center">
