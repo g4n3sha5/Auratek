@@ -8,7 +8,7 @@ export const Services = () => (
 
       <div className="row d-flex justify-content-center">
         {servicesList.map((service) => (
-          <Service {...service} />
+          <Service key={service.name} {...service} />
         ))}
       </div>
     </div>

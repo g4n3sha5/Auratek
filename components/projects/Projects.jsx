@@ -15,7 +15,7 @@ export const Projects = () => (
 
         <div className="row p-xl-3 d-flex justify-content-center">
           {projectsList.map((project) => (
-            <Project {...project} />
+            <Project key={project.name} {...project} />
           ))}
         </div>
       </div>
@@ -23,8 +23,8 @@ export const Projects = () => (
   </section>
 );
 
-export const Project = ({ key, name, desc, photoURL }) => (
-  <div key={key} className="col-lg-4 col-md-6 portfolio-item ">
+export const Project = ({ name, desc, photoURL }) => (
+  <div className="col-lg-4 col-md-6 portfolio-item ">
     <div className="portfolio-wrap h-100">
       <img src={photoURL} className=" w-100 h-100" alt="" />
       <div className="portfolio-info pb-lg-3">

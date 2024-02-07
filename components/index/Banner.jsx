@@ -3,7 +3,13 @@ import Image from 'next/image';
 export const Banner = () => {
   return (
     <section id="hero" className="d-flex align-items-center justify-content-center">
-      <Image src="/img/samuel-sianipar.webp" priority={true} layout="fill" className="heroImg object-fit-cover" />
+      <Image
+        src="/img/samuel-sianipar.webp"
+        priority={true}
+        fill={true}
+        alt="Zdjęcie poglądowe instalacji"
+        className="heroImg object-fit-cover"
+      />
       <div className="overlay"></div>
       <div className="container d-flex justify-content-center flex-column align-items-center" data-aos="fade-up">
         <div className="row w-100 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="150">
@@ -18,7 +24,7 @@ export const Banner = () => {
 
         <div className="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
           {boxList.map((box) => (
-            <BoxComponent {...box} />
+            <BoxComponent key={box.text} {...box} />
           ))}
         </div>
       </div>

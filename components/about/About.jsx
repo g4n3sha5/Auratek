@@ -27,7 +27,7 @@ export const About = () => {
 
             <div className="col-lg-6" data-aos="fade-left" data-aos-delay="100">
               {iconBoxes.map((iconBox) => (
-                <IconBox {...iconBox} />
+                <IconBox key={iconBox.name} {...iconBox} />
               ))}
             </div>
           </div>

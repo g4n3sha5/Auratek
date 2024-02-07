@@ -42,7 +42,7 @@ export const Navbar = () => {
         >
           <ul className="navbar-nav">
             {NAV_ITEMS.map((item) => (
-              <NavItem {...item} />
+              <NavItem key={item.name} {...item} />
             ))}
           </ul>
         </nav>

@@ -15,7 +15,7 @@ export const Portfolio = () => (
 
       <div className="row d-flex justify-content-center " data-aos="fade-up" data-aos-delay="200">
         {shortProjectsList.map((project) => (
-          <Project {...project} />
+          <Project key={project.key} {...project} />
         ))}
       </div>
       <div className="d-flex w-100 justify-content-center">

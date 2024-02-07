@@ -28,7 +28,7 @@ export const Contact = () => (
             data-aos-delay="100"
           >
             {personList.map((person) => (
-              <Person {...person} />
+              <Person key={person.key} {...person} />
             ))}
           </div>
         </div>
@@ -37,13 +37,8 @@ export const Contact = () => (
   </section>
 );
 
-export const Person = ({ key, name, tel, email }) => (
-  <div
-    key={key}
-    className="icon-box  col-lg-6 col-md-10 col-12 py-3 px-lg-2 px-0"
-    data-aos="zoom-in"
-    data-aos-delay="150"
-  >
+export const Person = ({ name, tel, email }) => (
+  <div className="icon-box  col-lg-6 col-md-10 col-12 py-3 px-lg-2 px-0" data-aos="zoom-in" data-aos-delay="150">
     <div className="contactBox overflow-hidden ">
       <h4>{name}</h4>
       <i className="bx bxs-phone d-inline"></i> <h6 className="d-inline">{tel}</h6>
