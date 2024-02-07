@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { NAV_ITEMS } from "./Navbar";
+import Link from 'next/link';
+import { NAV_ITEMS } from './Navbar';
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer id="footer">
       <div className="footer-top">
@@ -30,8 +30,7 @@ const Footer = () => {
                 {NAV_ITEMS.map(({ name, href }) => {
                   return (
                     <li key={name}>
-                      <i className="bx bx-chevron-right"></i>{" "}
-                      <Link href={href}>{name}</Link>
+                      <i className="bx bx-chevron-right"></i> <Link href={href}>{name}</Link>
                     </li>
                   );
                 })}
@@ -43,4 +42,3 @@ const Footer = () => {
     </footer>
   );
 };
-export default Footer

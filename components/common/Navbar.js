@@ -1,42 +1,22 @@
-import { useEffect, useRef } from "react";
-import Link from "next/link";
+import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 
-const NavItem = ({ name, href }) => {
-  return (
-    <li className="nav-item  d-flex justify-content-center mx-2 " key={name}>
-      <Link
-        className="nav-link w-100 d-block text-center"
-        href={href}
-        scroll={false}
-      >
-        {name}
-      </Link>
-    </li>
-  );
-};
-export const NAV_ITEMS = [
-  { name: "Home", href: "/" },
-  { name: "Nasze realizacje", href: "/realizacje/" },
-  { name: "O nas", href: "/onas/" },
-  { name: "Kontakt", href: "/kontakt/" },
-];
-
-const Navbar = () => {
+export const Navbar = () => {
   const navRef = useRef();
 
   const handleClick = () => {
-    navRef.current.classList.toggle("navShow");
+    navRef.current.classList.toggle('navShow');
     console.log(navRef.current.classList);
-    navRef.current.classList.toggle("d-none");
+    navRef.current.classList.toggle('d-none');
   };
 
   useEffect(() => {
     let listener = () => {
-      navRef.current.classList.remove("navShow");
-      navRef.current.classList.add("d-none");
+      navRef.current.classList.remove('navShow');
+      navRef.current.classList.add('d-none');
     };
-    window.addEventListener("resize", listener);
-    return () => window.removeEventListener("resize", listener);
+    window.addEventListener('resize', listener);
+    return () => window.removeEventListener('resize', listener);
   }, []);
 
   return (
@@ -66,12 +46,23 @@ const Navbar = () => {
               <NavItem {...item} />
             ))}
           </ul>
-
-          {/*<i  className="bi bi-list mobile-nav-toggle">*/}
-          {/*</i>*/}
         </nav>
       </div>
     </header>
   );
 };
-export default Navbar
+
+const NavItem = ({ name, href }) => (
+  <li className="nav-item  d-flex justify-content-center mx-2 " key={name}>
+    <Link className="nav-link w-100 d-block text-center" href={href} scroll={false}>
+      {name}
+    </Link>
+  </li>
+);
+
+export const NAV_ITEMS = [
+  { name: 'Home', href: '/' },
+  { name: 'Nasze realizacje', href: '/portfolio/' },
+  { name: 'O nas', href: '/about/' },
+  { name: 'Kontakt', href: '/contact/' },
+];

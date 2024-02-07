@@ -1,10 +1,10 @@
-const Contact = () => {
+export const Contact = () => {
   async function handleSubmit(e) {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     try {
-      const response = await fetch("api/contact", {
-        method: "post",
+      const response = await fetch('api/contact', {
+        method: 'post',
         body: new URLSearchParams(data),
       });
 
@@ -48,22 +48,10 @@ const Contact = () => {
           </div>
 
           <div className="col-lg-8 mt-5 mt-lg-0">
-            <form
-              onSubmit={handleSubmit}
-              method="post"
-              role="form"
-              className="email-form"
-            >
+            <form onSubmit={handleSubmit} method="post" role="form" className="email-form">
               <div className="row">
                 <div className="col-md-6 form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    className="form-control"
-                    id="name"
-                    placeholder="Twoje imię"
-                    required
-                  />
+                  <input type="text" name="name" className="form-control" id="name" placeholder="Twoje imię" required />
                 </div>
                 <div className="col-md-6 form-group mt-3 mt-md-0">
                   <input
@@ -77,29 +65,14 @@ const Contact = () => {
                 </div>
               </div>
               <div className="form-group mt-3">
-                <input
-                  type="text"
-                  className="form-control"
-                  name="subject"
-                  id="subject"
-                  placeholder="Temat"
-                  required
-                />
+                <input type="text" className="form-control" name="subject" id="subject" placeholder="Temat" required />
               </div>
               <div className="form-group mt-3">
-                <textarea
-                  className="form-control"
-                  name="message"
-                  rows="5"
-                  placeholder="Wiadomość"
-                  required
-                ></textarea>
+                <textarea className="form-control" name="message" rows="5" placeholder="Wiadomość" required></textarea>
               </div>
               <div className="my-3">
                 <div className="error-message"></div>
-                <div className="sent-message">
-                  Twoja wiadomość została wysłana!
-                </div>
+                <div className="sent-message">Twoja wiadomość została wysłana!</div>
               </div>
               <div className="text-center">
                 <button type="submit">Wyślij wiadomość</button>
@@ -111,4 +84,4 @@ const Contact = () => {
     </section>
   );
 };
-export default Contact
+export default Contact;
