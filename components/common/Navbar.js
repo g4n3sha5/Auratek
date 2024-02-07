@@ -6,7 +6,6 @@ export const Navbar = () => {
 
   const handleClick = () => {
     navRef.current.classList.toggle('navShow');
-    console.log(navRef.current.classList);
     navRef.current.classList.toggle('d-none');
   };
 

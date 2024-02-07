@@ -1,4 +1,4 @@
-import ImageBanner from '../common/ImageBanner.js';
+import { ImageBanner } from '../common/ImageBanner.js';
 
 export const About = () => {
   return (

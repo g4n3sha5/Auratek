@@ -1,4 +1,4 @@
-import ImageBanner from '../common/ImageBanner';
+import { ImageBanner } from '../common/ImageBanner';
 
 export const Contact = () => (
   <section id="Contact" className="bannerSection">
