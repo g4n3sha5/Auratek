@@ -1,16 +1,16 @@
 import { Navbar } from '../components/common/Navbar';
-import { Projects } from '../components/projects/Projects';
+import { Projects as ProjectsSection } from '../components/projects/Projects';
 import { Footer } from '../components/common/Footer';
 
-const Portfolio = () => (
+const Projects = () => (
   <>
     <main>
       <div id="main">
         <Navbar />
-        <Projects />
+        <ProjectsSection />
         <Footer />
       </div>
     </main>
   </>
 );
-export default Portfolio;
+export default Projects;

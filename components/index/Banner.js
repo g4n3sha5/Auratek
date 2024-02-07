@@ -1,7 +1,11 @@
+import Image from 'next/image';
+
 export const Banner = () => {
   return (
     <section id="hero" className="d-flex align-items-center justify-content-center">
-      <div className="container  d-flex justify-content-center flex-column align-items-center" data-aos="fade-up">
+      <Image src="/samuel-sianipar.webp" layout="fill" className="heroImg object-fit-cover" />
+      <div className="overlay"></div>
+      <div className="container d-flex justify-content-center flex-column align-items-center" data-aos="fade-up">
         <div className="row w-100 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="150">
           <div className="col-xl-8 col-lg-9 col-12 d-flex flex-column justify-content-center">
             <h1 className="logo">AURATEK</h1>
