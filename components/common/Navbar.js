@@ -61,7 +61,7 @@ const NavItem = ({ name, href }) => (
 
 export const NAV_ITEMS = [
   { name: 'Home', href: '/' },
-  { name: 'Nasze realizacje', href: '/portfolio/' },
+  { name: 'Nasze realizacje', href: '/projectsg/' },
   { name: 'O nas', href: '/about/' },
   { name: 'Kontakt', href: '/contact/' },
 ];
