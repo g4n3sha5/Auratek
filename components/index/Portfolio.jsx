@@ -19,7 +19,7 @@ export const Portfolio = () => (
         ))}
       </div>
       <div className="d-flex w-100 justify-content-center">
-        <Link href="/realizacje/" className="get-started-btn scrollto">
+        <Link href="/projects/" className="get-started-btn scrollto">
           Zobacz więcej
         </Link>
       </div>
